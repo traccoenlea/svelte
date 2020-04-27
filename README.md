@@ -13,4 +13,4 @@ pour installer les dépendances nécessaires
 ```bash
 npm run dev
 ```
-pour lancer le projet qui est accessible à cette adresse :[http://localhost:5000]
+pour lancer le projet qui est accessible à cette adresse : [http://localhost:5000]
