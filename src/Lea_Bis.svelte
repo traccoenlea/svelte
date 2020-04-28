@@ -21,8 +21,6 @@
             image.style.display = 'block';
         }
 
-
-
     }
 
     let nomFormation = 'LP CréaWeb';
