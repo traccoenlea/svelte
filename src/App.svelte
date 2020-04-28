@@ -1,8 +1,8 @@
 <script>
     import Juju from './Juju.svelte';
-    import Maria from './Maria.svelte'
-    import Lea from './Lea.svelte'
-    import Lea_Bis from './Lea_Bis.svelte'
+    import Maria from './Maria.svelte';
+    import Lea from './Lea.svelte';
+    import Lea_Bis from './Lea_Bis.svelte';
 
 
     let name = 'world';
