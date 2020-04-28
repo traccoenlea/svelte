@@ -15,16 +15,13 @@
 
 <h1>Hello {name}!</h1>
 
-
 <div id="Juju">
     <Juju/>
 </div>
 
-
 <div id="Maria">
     <Maria/>
 </div>
-
 
 <div id="Lea">
 	<Lea/>
