@@ -1,6 +1,6 @@
 <script>
     import {onMount} from 'svelte';
-    
+
     onMount(() => {
         let image = document.getElementById('imageTest');
         image.style.display = 'none';
@@ -20,6 +20,7 @@
             form.style.display = 'none';
             image.style.display = 'block';
         }
+
 
 
     }
