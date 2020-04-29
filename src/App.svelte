@@ -9,8 +9,8 @@
 </script>
 
 <nav>
-    <a href="#Juju" class="item " >Juju</a>
-    <a href="#Juju_Accueil">Juju Accueil</a
+    <a href="#Juju" class="item" >Juju</a>
+    <a href="#Juju_Accueil" class="item" >Juju Accueil</a>
     <a href="#Maria" class="item" >Maria</a>
     <a href="#Lea"class="item" >Léa</a>
     <a href="#Lea_Bis"class="item" >Léa Bis</a>
