@@ -27,21 +27,7 @@ html, body {
   bottom: 0;
 }
 
-.first {
-    background-color: #dc322f;
-}
 
-.second {
-    background-color: #073642;
-}
-
-.third {
-    background-color: #cb4b16;
-}
-
-.fourth {
-    background-color: #6c71c4;
-}
 
 .fifth {
     background-color: #123456;
@@ -74,4 +60,19 @@ html, body {
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
+}
+
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url("fonts/Raleway-Bold.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url("fonts/Raleway-Regular.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Raleway-SemiBold";
+    src: url("fonts/Raleway-SemiBold.ttf") format("TrueType");
 }

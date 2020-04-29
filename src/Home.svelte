@@ -1,106 +1,115 @@
-<svelte:head>
-	<title>ACCUEIL</title>
-</svelte:head>
-
 <script>
-	import {onMount} from 'svelte';
 
-    onMount(() => {
-        let image = document.getElementById('imagehero');
-        image.style.display = 'none';
-    });
+	let src = '/img/fond.png';
+	let langue = '/img/icon/langue.png';
+	let location = '/img/icon/location.png';
+	let cours = '/img/icon/cours.png';
 
-
-    let src = 'https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80';
-    let imgAfterForm = '<img {src} alt="hero"/>';
-
-    let imgDisplay = 'none';
-
-    function formToImage() {
-        let image = document.getElementById('imagehero');
-        let form = document.getElementById('form');
-
-        if (image.style.display !== 'block') {
-            form.style.display = 'none';
-            image.style.display = 'block';
-        }
-
-    }
 </script>
 
-<article class="box">
-	<h2>
-		<slot>
-			<span class="missing">LP CRÉAWEB: MÉTIERS DU NUMÉRIQUE: CONCEPTION, RÉDACTION ET RÉALISATION WEB</span>
-		</slot>
-	</h2>
 
-	<div class="address">
-		<slot>
-			<span class="missing">IUT DE LENS</span>
-		</slot>
+<div class="fond">
+
+	<div class="texte"> 
+
+		<div class="ligne"></div>
+		<h2> LP CRÉAWEB: MÉTIERS DU NUMÉRIQUE: CONCEPTION, RÉDACTION ET RÉALISATION WEB </h2> 
+
+		<div class="langue">
+			<img src={location}>
+			<p> IUT DE LENS  </p> 
+		</div>
+
+		<div class="langue">
+			<img src={langue}>
+			<p> FRANÇAIS  </p> 
+		</div>
+
+		<div class="langue">
+			<img src={location}>
+			<p> ALTERNANCE  </p> 
+		</div>
+
+		<div class="langue">
+			<img src={langue}>
+			<p> Admissible à : Bac+2 </p>
+		</div>
+
+		<div class="langue">
+			<img src={location}>
+			<p> Niveau de sortie : Bac +3 </p>
+		</div>
+
+		<div class="heures">
+			<p> 536 heures d'enseignement dont 134 heures de projets </p>
+		</div>
+
 	</div>
 
-	<div class="langue">
-		<slot>
-			<span class="missing">FRANÇAIS</span>
-		</slot>
-	</div>
-
-    	<div class="categorie">
-		<slot>
-			<span class="missing">ALTERNANCE</span>
-		</slot>
-	</div>
-
-    	<div class="admission">
-		<slot>
-			<span class="missing">Admissible à : Bac+2</span>
-		</slot>
-	</div>
-
-    	<div class="niveau">
-		<slot>
-			<span class="missing">Niveau de sortie:</span>
-		</slot>
-	</div>
-
-    	<div class="temps">
-		<slot>
-			<span class="missing">536 heures d'enseignement dont 134 heures de projets</span>
-		</slot>
-	</div>
-</article>
+</div>
 
 <style>
-	.box {
-		width: 300px;
-		border: 1px solid #aaa;
-		border-radius: 2px;
-		box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-		padding: 1em;
+	
+	.fond {
+	    height :100vh;
+	    background: url('/img/fond.png') no-repeat center fixed; 
+	    background-size: cover;
+	    height: 100vh;
+	    display: flex;
+    	justify-content: left;
+    	padding-left: 150px;
+    	align-items: center;
+    }
+
+    .langue {
+
+    	display: flex;
+    	justify-content: left;
+    	align-items: center;
+
+    }
+
+    .ligne_bas {
+	    
+	    border-bottom: 5px solid #EE8B29;
+	    height: 30px;
+	    width: 70px;
 	}
 
-	.box {
-		padding: 0 0 0.2em 0;
-		margin: 0 0 1em 0;
-		border-bottom: 1px solid #ff3e00;
+
+    img {
+
+    	width: 15px;
+    	height: 15px;
+    }
+
+    .texte {
+
+    	background-color: white;
+    	width: 50vh;
+    	padding: 40px;
+    	display: flex;
+    	flex-direction: column;
+    }
+
+    .ligne {
+	    
+	    border-top: 5px solid #EE8B29;
+	    height: 30px;
+	    width: 70px;
 	}
 
-	.address, .langue,.categorie,.admission, .niveau, .temps {
-		padding: 0 0 0 1.5em;
-		background:  0 50% no-repeat;
-		background-size: 1em 1em;
-		margin: 0 0 0.5em 0;
-		line-height: 1.2;
-	}
+	h2 {
+    	font-family: 'Raleway-SemiBold', sans-serif;
+    	font-size: 17px;
+    	padding-bottom: 20px;
+    }
 
-	.address { background-image: url(../icon/adresse.svg) }
-	.langue   { background-image: url(../icon/language.svg) }
-	.categorie { background-image: url(../icon/categorie.svg) }
-	.admission   { background-image: url(../icon/admis.svg) }
-	.niveau { background-image: url(../icon/niveau.svg) }
-	.temps   { background-image: url(../icon/temps.svg) }
-	.missing { color: #999 }
+    p {
+    	font-family: 'Raleway-Regular', sans-serif;
+    	font-size: 15px;
+    	padding: 10px;
+    }
 
 </style>
+
