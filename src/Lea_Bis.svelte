@@ -8,9 +8,15 @@
 
 
     let src = 'https://media.giphy.com/media/jOgRWnCyyRqLaCjHMS/source.gif';
-    let imgAfterForm = '<img {src} alt="test"/>';
 
     let imgDisplay = 'none';
+
+    let nomFormation = 'LP CréaWeb';
+    let lieuFormation = 'IUT LENS';
+    let bacDebut = 'Bac +2 minimum';
+    let bacSortie = 'Bac +3';
+    let modalites = 'Alternance ou continu avec stages';
+
 
     function formToImage() {
         let image = document.getElementById('imageTest');
@@ -20,14 +26,7 @@
             form.style.display = 'none';
             image.style.display = 'block';
         }
-
     }
-
-    let nomFormation = 'LP CréaWeb';
-    let lieuFormation = 'IUT LENS';
-    let bacDebut = 'Bac +2 minimum';
-    let bacSortie = 'Bac +3';
-    let modalites = 'Alternance ou continu avec stages';
 
 
 </script>
@@ -89,7 +88,4 @@
         width: 40%;
     }
 
-    #image {
-        /*display: none;*/
-    }
 </style>
