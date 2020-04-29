@@ -1,102 +1,164 @@
-<body>
-    <div class="pages">
-        <section class="first page">
-            <h2 class="title">Hey!</h2>
-        </section>
-        <section class="second page">
-            <h2 class="title">What is this?</h2>
-        </section>
-        <section class="third page">
-            <h2 class="title">I came here for the battle!</h2>
-        </section>
-        <section class="fourth page">
-            <h2 class="title">Aurevoir</h2>
-        </section>
-    </div>
-    <ul class="pagination">
-    </ul>
-</body>
+<div class="wrap">
 
+    <div class="boutons">
+
+        <h1> POUR VOIR LE PROGRAMME </h1>
+        <button class="btn">Télécharger le fichier </button>
+
+    </div>
+
+    <div id="gradient-overlay"></div>
+
+</div>
 
 <style>
 
-* {
-    padding: 0;
-    margin: 0;
-}
+    @font-face {
+        font-family: "Raleway-Bold";
+        src: url("fonts/Raleway-Bold.ttf") format("TrueType");
+    }
+    
+    .fond {
+        
+        height :100vh;
+        margin :0px;
+        padding:0px;
+    }
 
-html, body {
-    height: 100%;
-    width: 100%;
-    background: purple;
-}
+    .wrap {
 
-.pages {
-    height: 100%;
-    width: 100%;
-    position: relative;
-}
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        background: url(/img/programme.jpg) no-repeat center fixed; 
+        background-size: cover;
+    }
 
-.page {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    bottom: -100%;
-    transition: bottom .7s;
-}
+    .boutons {
 
-.page:first-child {
-  bottom: 0;
-}
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding : 30px;
+        align-items: center;
+        z-index : 99;
+    
+    }
 
-.first {
-    background-color: #dc322f;
-}
+    #gradient-overlay {
+        background: #000000;
+        height: 30vh;
+        width: 100%;
+        position: absolute;
+        opacity: 0.3;
+    }
 
-.second {
-    background-color: #073642;
-}
+    .btn {
+        width: 250px;
+        height: 45px;
+        font-family: 'Raleway-Bold', sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+        border: 1px solid white;
+        background-color: transparent;
+        color : white;
 
-.third {
-    background-color: #cb4b16;
-}
+    }
 
-.fourth {
-    background-color: #6c71c4;
-}
+    .btn:hover {
+        background-color: white;
+        color : black;
+    }
 
-.pagination {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-}
+    h1 {
+        color : white;
+        font-family: 'Raleway-Bold', sans-serif;
 
-.pagination>li {
-    list-style: none;
-    height: 20px;
-    width: 20px;
-    background: #000000;
-    border-radius: 50%;
-    margin-top: 10px;
-    transition: background .7s;
-}
+    }
 
-.pagination>li.active {
-    background: #ffffff;
-}
+    .body {
+        background: #E2E4E7;
+        padding: 0;
+        text-align: center;
+        font-family: 'open sans';
+        position: relative;
+        margin: 0;
+        height: 100%;
+        -webkit-font-smoothing: antialiased;
+    }
 
-.title {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-}
+    .wrapper {
+        height: 100%;
+        height: 100%;
+        margin: 0 auto; 
+        overflow: hidden;
+    }
+
+    .main_page section .page_container {
+        position: relative;
+        top: 25%;
+        margin: 0 auto 0;
+        max-width: 950px;
+        z-index: 3;
+    }
+
+    .main_page section  {
+        overflow: hidden;
+    }
+
+    .main_page section.page1 {
+        background:rgb(230, 217, 200);
+    }
+
+    .main_page section.page2 {
+        background: #555557;
+    }
+
+    .main_page section.page2 .page_container {
+        margin-top: 240px;
+        overflow: hidden;
+    }
+
+    .main_page section.page3 {
+      background: blue ;
+    }
+
+    .main_page section.page3 .page_container {
+      overflow: hidden;
+      width: 500px;
+      right: -285px;
+    }
+
+    .main_page section.page3 h1 {
+      text-align: left;
+      padding: 0;
+      margin-bottom: 0;
+      font-size: 70px;
+      letter-spacing: -1px;
+      color: black;
+    }
+
+    .body {
+     margin: 0;
+      overflow: hidden;
+      -webkit-transition: opacity 400ms;
+      -moz-transition: opacity 400ms;
+      transition: opacity 400ms;
+    }
+
+    .body, .onepage-wrapper {
+      display: block;
+      position: static;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+
 
 </style>
-
-
-
-
-

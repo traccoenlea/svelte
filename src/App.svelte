@@ -6,8 +6,28 @@
     import Juju_Accueil from './Juju_Accueil.svelte';
     import Color from './Color.svelte';
     let name = 'world';
+
+
 </script>
 
+    <div class="pages">
+        <section class="first page">
+            <Juju/>
+        </section>
+        <section class="second page">
+            <Juju_Accueil/>
+        </section>
+        <section class="third page">
+            <h2 class="title">I came here for the battle!</h2>
+        </section>
+        <section class="fourth page">
+            <h2 class="title">Aurevoir</h2>
+        </section>
+    </div>
+    <ul class="pagination">
+    </ul>
+
+<!--
 <nav>
     <a href="#Juju" class="item" >Juju</a>
     <a href="#Juju_Accueil" class="item" >Juju Accueil</a>
@@ -17,7 +37,7 @@
     <a href="#Color"class="item" >Color</a>
     <span class="nav-indicator"></span>
 </nav>
-
+-->
 
 <!--<h1>Hello {name}!</h1>
 
@@ -40,7 +60,7 @@
 <div id="Lea_Bis">
     <Lea_Bis/>
 </div>
--->
+
 
 
 
@@ -49,7 +69,6 @@
 </div>
 
 
-<style>
 
 nav {
   display: inline-flex;
@@ -109,4 +128,11 @@ nav {
 		 overflow: auto;
 	}
 }
-</style>
+
+-->
+
+
+
+
+
+
