@@ -1,0 +1,102 @@
+<body>
+    <div class="pages">
+        <section class="first page">
+            <h2 class="title">Hey!</h2>
+        </section>
+        <section class="second page">
+            <h2 class="title">What is this?</h2>
+        </section>
+        <section class="third page">
+            <h2 class="title">I came here for the battle!</h2>
+        </section>
+        <section class="fourth page">
+            <h2 class="title">Aurevoir</h2>
+        </section>
+    </div>
+    <ul class="pagination">
+    </ul>
+</body>
+
+
+<style>
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: purple;
+}
+
+.pages {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -100%;
+    transition: bottom .7s;
+}
+
+.page:first-child {
+  bottom: 0;
+}
+
+.first {
+    background-color: #dc322f;
+}
+
+.second {
+    background-color: #073642;
+}
+
+.third {
+    background-color: #cb4b16;
+}
+
+.fourth {
+    background-color: #6c71c4;
+}
+
+.pagination {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pagination>li {
+    list-style: none;
+    height: 20px;
+    width: 20px;
+    background: #000000;
+    border-radius: 50%;
+    margin-top: 10px;
+    transition: background .7s;
+}
+
+.pagination>li.active {
+    background: #ffffff;
+}
+
+.title {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+</style>
+
+
+
+
+
