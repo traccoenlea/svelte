@@ -1,9 +1,3 @@
-<script>
-
-	
-
-</script>
-
 <div class="fond">
 
 	<div class="texte"> 
