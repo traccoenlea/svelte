@@ -1,14 +1,32 @@
-
 <script>
-    function formToImage(){
-        alert('form or Image');
-    }
+    import {onMount} from 'svelte';
+
+    onMount(() => {
+        let image = document.getElementById('imageTest');
+        image.style.display = 'none';
+    });
+
+
+    let src = 'https://media.giphy.com/media/jOgRWnCyyRqLaCjHMS/source.gif';
+
+    let imgDisplay = 'none';
 
     let nomFormation = 'LP CréaWeb';
     let lieuFormation = 'IUT LENS';
     let bacDebut = 'Bac +2 minimum';
     let bacSortie = 'Bac +3';
     let modalites = 'Alternance ou continu avec stages';
+
+
+    function formToImage() {
+        let image = document.getElementById('imageTest');
+        let form = document.getElementById('form');
+
+        if (image.style.display !== 'block') {
+            form.style.display = 'none';
+            image.style.display = 'block';
+        }
+    }
 
 
 </script>
@@ -25,22 +43,25 @@
     </div>
 
     <div id="right">
-        <label for="changeFormation">Titre de la formation :</label>
-        <input type="text" id="changeFormation" bind:value={nomFormation}/>
+        <div id="form">
+            <label for="changeFormation">Titre de la formation :</label>
+            <input type="text" id="changeFormation" bind:value={nomFormation}/>
 
-        <label for="changeLieu">Lieu de la formation :</label>
-        <input type="text" id="changeLieu" bind:value={lieuFormation}/>
+            <label for="changeLieu">Lieu de la formation :</label>
+            <input type="text" id="changeLieu" bind:value={lieuFormation}/>
 
-        <label for="changeDebut">Bac nécessaire pour la formation :</label>
-        <input type="text" id="changeDebut" bind:value={bacDebut}/>
+            <label for="changeDebut">Bac nécessaire pour la formation :</label>
+            <input type="text" id="changeDebut" bind:value={bacDebut}/>
 
-        <label for="changeSortie">Bac à la sortie de formation :</label>
-        <input type="text" id="changeSortie" bind:value={bacSortie}/>
+            <label for="changeSortie">Bac à la sortie de formation :</label>
+            <input type="text" id="changeSortie" bind:value={bacSortie}/>
 
-        <label for="changeModalites">Modalités de la formation :</label>
-        <input type="text" id="changeModalites" bind:value={modalites}/>
-<br/>
-        <button on:click={formToImage}>Submit</button>
+            <label for="changeModalites">Modalités de la formation :</label>
+            <input type="text" id="changeModalites" bind:value={modalites}/>
+            <br/>
+            <button on:click={formToImage}>Submit</button>
+        </div>
+        <img {src} alt="test" id="imageTest"/>
     </div>
 </div>
 
@@ -65,6 +86,6 @@
     #right {
         background: cadetblue;
         width: 40%;
-
     }
+
 </style>
