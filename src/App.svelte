@@ -1,27 +1,33 @@
 <script>
+    import Home from './Home.svelte';
+    import Objectifs from './Objectifs.svelte';
+    import Debouches from './Debouches.svelte';
+    import Programme from './Programme.svelte';
+    import Perso from './Perso.svelte';
+
     import Juju from './Juju.svelte';
-    import Maria from './Maria.svelte';
     import Lea from './Lea.svelte';
     import Lea_Bis from './Lea_Bis.svelte';
-    import Juju_Accueil from './Juju_Accueil.svelte';
     import Color from './Color.svelte';
-    let name = 'world';
 
 
 </script>
 
     <div class="pages">
         <section class="first page">
-            <Juju/>
+            <Home/>
         </section>
         <section class="second page">
-            <Juju_Accueil/>
+            <Objectifs/>
         </section>
         <section class="third page">
-            <h2 class="title">I came here for the battle!</h2>
+            <Debouches/>
         </section>
         <section class="fourth page">
-            <h2 class="title">Aurevoir</h2>
+            <Programme/>
+        </section>
+        <section class="fifth page">
+            <Perso/>
         </section>
     </div>
     <ul class="pagination">
@@ -39,8 +45,7 @@
 </nav>
 -->
 
-<!--<h1>Hello {name}!</h1>
-
+<!--
 <div id="Juju">
     <Juju/>
 </div>
