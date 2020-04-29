@@ -4,6 +4,7 @@
     import Debouches from './Debouches.svelte';
     import Programme from './Programme.svelte';
     import Perso from './Perso.svelte';
+    import Menu from './Menu.svelte';
 
     import Juju from './Juju.svelte';
     import Lea from './Lea.svelte';
@@ -14,6 +15,9 @@
 </script>
 
     <div class="pages">
+        <section class="seventh page">
+            <Menu/>
+        </section>
         <section class="first page">
             <Home/>
         </section>
@@ -28,6 +32,9 @@
         </section>
         <section class="fifth page">
             <Perso/>
+        </section>
+        <section class="sixth page">
+<!--            <Menu/>-->
         </section>
     </div>
     <ul class="pagination">
