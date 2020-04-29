@@ -27,7 +27,7 @@
 
     .wrap {
 
-        height: 100vh;
+        height: 30vh;
         display: flex;
         align-items: center;
         justify-content: center;
