@@ -11,12 +11,9 @@
     let modalites = 'Alternance ou continu avec stages';
 
 
-
-    let src = '/img/test.jpg';
 </script>
 
 
-<img {src} alt="test"/>
 <hr>
 <div id="both">
     <div id="left">
