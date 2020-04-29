@@ -16,13 +16,13 @@
         let blue = b;
 
         if (red <= 50 || green <= 50 || blue <= 50) {
-            alert('wsh');
-            text = document.getElementById('bgChange').style.display;
-            alert(text);
-            text.style.display = 'none';
-        } else {
-            alert('ça fonctionne pas');
+            document.getElementById('bgChange').style.color = 'white';
+        }else if(red >= 200 || green >=200 || blue >= 200){
+            document.getElementById('bgChange').style.color = 'black';
+        }else if(90 <=red>= 170 || 90 <=green>= 170 || 90 <=blue>= 170){
+            alert('entre 2');
         }
+
     }
 </script>
 
@@ -55,6 +55,10 @@ r:{r} g:{g} b:{b}
 
 
 <style>
+    body {
+        color: yellow;
+    }
+
     #bgChange {
         background: var(--bg-color);
         padding: 30px;
@@ -62,6 +66,7 @@ r:{r} g:{g} b:{b}
         font-weight: bold;
         margin: 20px;
         font-size: 20px;
+
         /*color: var(--text-color);*/
     }
 </style>
