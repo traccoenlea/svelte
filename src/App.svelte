@@ -3,6 +3,7 @@
     import Maria from './Maria.svelte';
     import Lea from './Lea.svelte';
     import Lea_Bis from './Lea_Bis.svelte';
+    import Color from './Color.svelte';
     let name = 'world';
 </script>
 
@@ -11,6 +12,7 @@
     <a href="#Maria" class="item" >Maria</a>
     <a href="#Lea"class="item" >Léa</a>
     <a href="#Lea_Bis"class="item" >Léa Bis</a>
+    <a href="#Color"class="item" >Color</a>
       <span class="nav-indicator"></span>
 </nav>
 
@@ -31,6 +33,12 @@
 <div id="Lea_Bis">
     <Lea_Bis/>
 </div>
+
+
+<div id="Color">
+    <Color/>
+</div>
+
 
 <style>
 
