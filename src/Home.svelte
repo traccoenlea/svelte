@@ -101,7 +101,7 @@
 
 	h2 {
     	font-family: 'Raleway-SemiBold', sans-serif;
-    	font-size: 17px;
+    	font-size: 20px;
     	padding-bottom: 20px;
     }
 
