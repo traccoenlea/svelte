@@ -16,6 +16,7 @@
             <li><a href="#programme">Programme</a></li>
         </ul>
     </div>
+</nav>
 
     <div class="toggle">
         <li class="liTo">
@@ -27,40 +28,14 @@
         </li>
     </div>
 
-</nav>
+
 
 <style>
-    .menu {
-        background: red;
-        width: 100%;
-        position: absolute;
-    }
-
-    .toggle {
-        background: blue;
-        width: 100px;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: right;
-        top: 0;
-        z-index: 1;
-        position: relative;
-
-
-    }
-
+    
     .content {
-        background: purple;
     }
 
-    .toggle li {
-
-    }
-
-
-    /*
-
+   
     .nav{
         padding: 20px;
         background-color: white;
@@ -71,7 +46,6 @@
     }
 
     .menu {
-
         width : 70%;
         display: flex;
         justify-content: flex-start;
@@ -80,13 +54,14 @@
     }
 
     .toggle {
-
+        top: 0;
+        position: fixed;        
         width : 30%;
         display: flex;
         justify-content: flex-end;
         margin-right: 100px;
         align-items: center;
-    }*/
+    }
 
 
     a {
