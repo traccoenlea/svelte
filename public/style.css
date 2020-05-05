@@ -77,6 +77,12 @@ html, body {
     src: url("build/fonts/Raleway-SemiBold.ttf") format("TrueType");
 }
 
+@font-face {
+    font-family: "Raleway-Light";
+    src: url("fonts/Raleway-Light.ttf") format("TrueType");
+}
+
+
 
 
 

@@ -36,7 +36,7 @@
         display: flex;
         flex-direction: row;
         /*A MODIF SELON TES ENVIES : */
-        justify-content: space-around;
+        justify-content: center;
     }
 
     li {
