@@ -10,6 +10,7 @@
     import Lea from './Lea.svelte';
     import Lea_Bis from './Lea_Bis.svelte';
     import Color from './Color.svelte';
+    import TestMenu from './TestMenu.svelte';
 
 
 </script>
@@ -17,7 +18,8 @@
     <div class="pages">
         <section class="seventh page">
 <!--            <Menu/>-->
-            <Color/>
+<!--            <Color/>-->
+            <TestMenu/>
         </section>
         <section id="home" class="first page">
             <Home/>
