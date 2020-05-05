@@ -12,26 +12,25 @@
     import Menu from './Menu.svelte';
 </script>
 
-    <div class="pages">
-        <section class="seventh page">
-<!--            <Menu/>-->
-            <Color/>
-        </section>
-        <section id="home" class="first page">
-            <Home/>
-        </section>
-        <section id="objectifs" class="second page">
-            <Objectifs/>
-        </section>
-        <section id="debouches" class="third page">
-            <Debouches/>
-        </section>
-        <section id="programme" class="fourth page">
-            <Programme/>
-        </section>
-    </div>
-    <ul class="pagination">
-    </ul>
+<div class="pages">
+<!--    <section class="seventh page">-->
+<!--        <Color/>-->
+<!--    </section>-->
+    <section id="home" class="first page">
+        <Home/>
+    </section>
+    <section id="objectifs" class="second page">
+        <Objectifs/>
+    </section>
+    <section id="debouches" class="third page">
+        <Debouches/>
+    </section>
+    <section id="programme" class="fourth page">
+        <Programme/>
+    </section>
+</div>
+<ul class="pagination">
+</ul>
 
 <!--
 <nav>

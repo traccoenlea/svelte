@@ -1,6 +1,18 @@
+<!--<nav class="nav">-->
+<!--    <div class="menu">-->
+<!--        <ul>-->
+<!--            <li><a href="#home">Accueil</a></li>-->
+<!--            <li><a href="#objectifs">Objectifs & Compétences</a></li>-->
+<!--            <li><a href="#debouches">Débouchés</a></li>-->
+<!--            <li><a href="#programme">Programme</a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--    <div class="toggle">-->
+<!--        <div on:click={openNav} class="color">Modifier la page</div>-->
+<!--    </div>-->
+<!--</nav>-->
 
 <nav class="nav">
-
     <div class="menu">
         <ul>
             <li><a href="#home">Accueil</a></li>
@@ -9,11 +21,13 @@
             <li><a href="#programme">Programme</a></li>
         </ul>
     </div>
+
+    <div class="toggle">
+        <div on:click={openNav} class="color">Modifier la page</div>
+    </div>
 </nav>
 
-<div class="toggle">
-    <div on:click={openNav} class="color">Modifier la page</div>
-</div>
+
 <div id="sideForm" class="sideForm">
     <a href="javascript:void(0)" class="closebtn" on:click={closeNav}>&times;</a>
     <h1>EN GROS LE FORMULAIRE VA LA</h1>
@@ -30,17 +44,66 @@
 </script>
 
 <style>
-    #main {
-        margin-top: 100px;
+
+
+    .nav {
+        padding: 20px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: fixed;
+        box-shadow: 0 0 11px -5px #000;
+        align-items: center;
+        height: 40px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 50px;
+        align-items: center;
+    }
+
+    .toggle {
+        top: 15px;
+        right: 100px;
+        position: relative;
+        /*width: 100%;*/
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: 'Raleway-Light', sans-serif;
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    a:hover {
+
+        color: #FF7F00;
+    }
+
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    li {
+        list-style: none;
+
     }
 
     .color {
         background-color: #FF7F00;
         text-align: right;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 15px 20px;
         font-family: 'Raleway-Light', sans-serif;
         color: white;
         font-size: 15px;
@@ -85,62 +148,5 @@
         font-size: 36px;
         margin-left: 50px;
     }
-
-    .nav{
-        padding: 20px;
-        background-color: white;
-        display: flex;
-        width: 100%;
-        position: fixed;
-        box-shadow: 0 0 11px -5px #000;
-        align-items: center;
-        height: 40px;
-    }
-
-    .menu {
-        width : 70%;
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 50px;
-        align-items: center;
-        position: absolute;
-
-    }
-
-    .toggle {
-        top: 15px;
-        right: 100px;
-        position: relative;
-        width : 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-        font-family: 'Raleway-Light', sans-serif;
-        font-size: 15px;
-        padding: 20px;
-    }
-
-    a:hover {
-
-        color: #FF7F00;
-    }
-
-
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    li {
-        list-style: none;
-
-    }
-
 
 </style>
