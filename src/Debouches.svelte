@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+<script>
+	import Menu from './Menu.svelte';
+</script>
+<Menu/>
+
+>>>>>>> c2c895a4898167e361d9bc42af817142f00a6bf9
 <div class="fond">
 	<div class="texte">  
 
@@ -43,8 +51,10 @@
 	    display: flex;
         justify-content: center;
     	align-items: center;
-        
-    }
+        flex-direction: column;
+
+}
+
     
     .texte {
 
@@ -55,7 +65,7 @@
 		margin: 25px;
     	flex-direction: column;
 		height: 300px;
-        border: 1px solid white;
+        border: 0.5px solid white;
     }
 
     .ligne {

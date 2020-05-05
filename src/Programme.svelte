@@ -1,10 +1,13 @@
+<script>
+    import Menu from './Menu.svelte';
+</script>
+<Menu/>
 <div class="wrap">
 
     <div class="boutons">
         <h1> POUR VOIR LE PROGRAMME </h1>
-        <button class="btn">Télécharger le fichier </button>
+        <button class="btn">Télécharger le fichier</button>
     </div>
-
 
 
     <div id="gradient-overlay"></div>
@@ -12,12 +15,11 @@
 </div>
 
 <style>
-    
+
     .fond {
-        
-        height :100vh;
-        margin :0px;
-        padding:0px;
+        height: 100vh;
+        margin: 0px;
+        padding: 0px;
     }
 
     .wrap {
@@ -28,7 +30,7 @@
         justify-content: center;
         display: flex;
         flex-direction: column;
-        background: url(/img/programme.jpg) no-repeat center fixed; 
+        background: url(/img/programme.jpg) no-repeat center fixed;
         background-size: cover;
     }
 
@@ -37,10 +39,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding : 50px;
+        padding: 50px;
         align-items: center;
-        z-index : 99;
-    
+        z-index: 99;
+
     }
 
     #gradient-overlay {
@@ -61,23 +63,22 @@
         cursor: pointer;
         border: 1px solid white;
         background-color: transparent;
-        color : white;
+        color: white;
         margin: 50px;
 
     }
 
     .btn:hover {
         background-color: white;
-        color : black;
+        color: black;
     }
 
 
     h1 {
-        color : white;
+        color: white;
         font-family: 'Raleway-Bold', sans-serif;
         font-size: 40px;
     }
-
 
 
 </style>

@@ -4,35 +4,33 @@
     import Debouches from './Debouches.svelte';
     import Programme from './Programme.svelte';
     import Perso from './Perso.svelte';
-    import Menu from './Menu.svelte';
 
     import Juju from './Juju.svelte';
     import Lea from './Lea.svelte';
     import Lea_Bis from './Lea_Bis.svelte';
     import Color from './Color.svelte';
-
-
+    import Menu from './Menu.svelte';
 </script>
 
-    <div class="pages">
-        <section class="seventh page">
-            <Menu/>
-        </section>
-        <section id="home" class="first page">
-            <Home/>
-        </section>
-        <section id="objectifs" class="second page">
-            <Objectifs/>
-        </section>
-        <section id="debouches" class="third page">
-            <Debouches/>
-        </section>
-        <section id="programme" class="fourth page">
-            <Programme/>
-        </section>
-    </div>
-    <ul class="pagination">
-    </ul>
+<div class="pages">
+<!--    <section class="seventh page">-->
+<!--        <Color/>-->
+<!--    </section>-->
+    <section id="home" class="first page">
+        <Home/>
+    </section>
+    <section id="objectifs" class="second page">
+        <Objectifs/>
+    </section>
+    <section id="debouches" class="third page">
+        <Debouches/>
+    </section>
+    <section id="programme" class="fourth page">
+        <Programme/>
+    </section>
+</div>
+<ul class="pagination">
+</ul>
 
 <!--
 <nav>
