@@ -1,7 +1,6 @@
 <button on:click|preventDefault|stopPropagation={toggleActive}>Appuie ici pour trigger</button>
 
 {#if !isActive}
-
         <slot></slot>
 {/if}
 
