@@ -10,6 +10,7 @@
 
 {#if !isActive}
 	<slot></slot>
+
 {/if}
 
 <script>
