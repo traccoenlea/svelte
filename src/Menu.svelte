@@ -6,10 +6,9 @@
 </script>
 
 
-
 <nav class="nav">
 
-    <div class="menu"> 
+    <div class="menu">
         <ul>
             <li><a href="#home">Accueil</a></li>
             <li><a href="#objectifs">Objectifs & Compétences</a></li>
@@ -18,8 +17,8 @@
         </ul>
     </div>
 
-    <div class="toggle"> 
-        <li>
+    <div class="toggle">
+        <li class="liTo">
             <Toggle title="Toggle Header" isActive={true}>
                 <div class="content">
                     <img {src} alt="test" id="imageTest"/>
@@ -27,10 +26,40 @@
             </Toggle>
         </li>
     </div>
-   
+
 </nav>
 
 <style>
+    .menu {
+        background: red;
+        width: 100%;
+        position: absolute;
+    }
+
+    .toggle {
+        background: blue;
+        width: 100px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        top: 0;
+        z-index: 1;
+        position: relative;
+
+
+    }
+
+    .content {
+        background: purple;
+    }
+
+    .toggle li {
+
+    }
+
+
+    /*
 
     .nav{
         padding: 20px;
@@ -44,7 +73,6 @@
     .menu {
 
         width : 70%;
-        justify-content: flex-start;
         display: flex;
         justify-content: flex-start;
         margin-left: 50px;
@@ -58,23 +86,21 @@
         justify-content: flex-end;
         margin-right: 100px;
         align-items: center;
-    }
+    }*/
 
 
-   a {
-       text-decoration: none;
-       color: black;
-       font-family: 'Raleway-Light', sans-serif;
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: 'Raleway-Light', sans-serif;
         font-size: 15px;
         padding: 15px;
-   }
+    }
 
-      a:hover{
-    
-       color: #FF7F00;
-       font-family: 'Raleway-Light', sans-serif;
+    a:hover {
 
-   }
+        color: #FF7F00;
+    }
 
 
     ul {
