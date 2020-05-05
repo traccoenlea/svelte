@@ -2,8 +2,17 @@
     <use xlink:href="#icon-eyedropper"></use>
 </svg>
 
+
+<!--<nav>-->
+<!--	1-->
+<!--	<li on:click|preventDefault|stopPropagation={toggleActive}>Test</li>-->
+<!--</nav>-->
+
+	
+
 {#if !isActive}
-        <slot></slot>
+	<slot></slot>
+
 {/if}
 
 <script>
