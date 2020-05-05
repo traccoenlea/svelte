@@ -1,4 +1,4 @@
-<div class="fond"> 
+<div class="fond">
 	<div class="texte">  
 
 		<div class="ligne"></div>
