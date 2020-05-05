@@ -1,10 +1,12 @@
-<button on:click|preventDefault|stopPropagation={toggleActive}>Appuie ici pour trigger</button>
+<svg class="icon icon-eyedropper"  on:click|preventDefault|stopPropagation={toggleActive}>
+    <use xlink:href="#icon-eyedropper"></use>
+</svg>
 
 
-<nav>
-	1 
-	<li on:click|preventDefault|stopPropagation={toggleActive}>Test</li>
-</nav>
+<!--<nav>-->
+<!--	1-->
+<!--	<li on:click|preventDefault|stopPropagation={toggleActive}>Test</li>-->
+<!--</nav>-->
 
 	
 
@@ -21,3 +23,18 @@
         isActive = !isActive
     }
 </script>
+
+
+<style>
+    .icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        /*EPAISSEUR DU TRAIT*/
+        stroke-width: 2px;
+        /*COULEUR DU TRAIT*/
+        stroke: orange;
+        /*COULEUR DE REMPLISSAGE*/
+        fill: purple;
+    }
+</style>
