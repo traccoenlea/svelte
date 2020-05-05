@@ -61,18 +61,20 @@
     }
 
 
-    a {
+   a {
        text-decoration: none;
        color: black;
        font-family: 'Raleway-Light', sans-serif;
         font-size: 15px;
         padding: 15px;
-    }
+   }
 
-    a:hover{
+      a:hover{
     
        color: #FF7F00;
-    }
+       font-family: 'Raleway-Light', sans-serif;
+
+   }
 
 
     ul {

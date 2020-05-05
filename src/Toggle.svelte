@@ -1,6 +1,8 @@
-<svg class="icon icon-eyedropper"  on:click|preventDefault|stopPropagation={toggleActive}>
-    <use xlink:href="#icon-eyedropper"></use>
-</svg>
+<!--<svg class="icon icon-eyedropper"  on:click|preventDefault|stopPropagation={toggleActive}>-->
+<!--    <use xlink:href="#icon-eyedropper"></use>-->
+<!--</svg>-->
+
+<button on:click|preventDefault|stopPropagation={toggleActive}>Click here mate !</button>
 
 
 <!--<nav>-->
