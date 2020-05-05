@@ -1,6 +1,5 @@
-<div class="fond">
-
-	<div class="texte"> 
+<div class="fond"> 
+	<div class="texte">  
 
 		<div class="ligne"></div>
 		<h2> COMMUNICATION ET RÉDACTION </h2> 
@@ -36,15 +35,15 @@
 
 <style> 
 
-    .fond {
-	    height :100vh;
+
+	.fond {
 	    background: url('/img/hero.jpg') no-repeat center fixed; 
 	    background-size: cover;
 	    height: 100vh;
-	    display: inline-flex;
-    	justify-content: left;
-    	padding-left: 150px;
+	    display: flex;
+        justify-content: center;
     	align-items: center;
+        
     }
     
 
@@ -52,17 +51,20 @@
     .texte {
 
     	background-color: rgba(255, 255, 255, 0.363);
-    	width: 50vh;
+    	width: 280px;
     	padding: 40px;
     	display: flex;
+		margin: 25px;
     	flex-direction: column;
+		height: 300px;
     }
 
     .ligne {
 	    
 	    border-top: 5px solid #EE8B29;
 	    height: 30px;
-	    width: 70px;
+        width: 70px;
+
 	}
 
 	h2 {
@@ -70,7 +72,11 @@
     	font-size: 20px;
     	padding-bottom: 20px;
     }
-
+    h1 {
+        color : white;
+        font-family: 'Raleway-Bold', sans-serif;
+        font-size: 40px;
+    }
     p {
     	font-family: 'Raleway-Regular', sans-serif;
     	font-size: 15px;
