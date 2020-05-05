@@ -4,6 +4,9 @@
 	let langue = '/img/icon/langue.png';
 	let location = '/img/icon/location.png';
 	let cours = '/img/icon/cours.png';
+	let education = '/img/icon/education.png';
+	let diplomas = '/img/icon/diplomas.png';
+	let doc = '/img/icon/doc.png';
 
 </script>
 
@@ -26,17 +29,17 @@
 		</div>
 
 		<div class="langue">
-			<img src={location}>
+			<img src={education}>
 			<p> ALTERNANCE  </p> 
 		</div>
 
 		<div class="langue">
-			<img src={langue}>
+			<img src={doc}>
 			<p> Admissible à : Bac+2 </p>
 		</div>
 
 		<div class="langue">
-			<img src={location}>
+			<img src={diplomas}>
 			<p> Niveau de sortie : Bac +3 </p>
 		</div>
 
@@ -106,7 +109,7 @@
     }
 
     p {
-    	font-family: 'Raleway-Regular', sans-serif;
+    	font-family: 'Raleway-Light', sans-serif;
     	font-size: 15px;
     	padding: 10px;
     }
