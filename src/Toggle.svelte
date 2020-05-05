@@ -30,8 +30,16 @@
 
 <style>
     .color {
-        background: yellow;
+        background-color: #FF7F00;
         text-align: right;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: 'Raleway-Light', sans-serif;
+        color: white;
+        font-size: 15px;
+        border-radius: 2px;
     }
 
     .icon {

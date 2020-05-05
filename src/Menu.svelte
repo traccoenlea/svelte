@@ -32,7 +32,7 @@
 
 <style>
     .liTo {
-        background: purple;
+         background-color: #FF7F00;
     }
 
     .content {
@@ -47,6 +47,8 @@
         width: 100%;
         position: fixed;
         box-shadow: 0 0 11px -5px #000;
+        align-items: center;
+        height: 40px;
     }
 
     .menu {
@@ -56,12 +58,12 @@
         margin-left: 50px;
         align-items: center;
         position: absolute;
+
     }
 
     .toggle {
-        top: 10px;
-        right: 20px;
-        /*margin: auto;*/
+        top: 15px;
+        right: 100px;
         position: relative;
         width : 100%;
         display: flex;
@@ -75,7 +77,7 @@
         color: black;
         font-family: 'Raleway-Light', sans-serif;
         font-size: 15px;
-        padding: 15px;
+        padding: 20px;
     }
 
     a:hover {
