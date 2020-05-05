@@ -43,8 +43,10 @@
 	    display: flex;
         justify-content: center;
     	align-items: center;
-        
-    }
+        flex-direction: column;
+
+}
+
     
     .texte {
 
@@ -55,7 +57,7 @@
 		margin: 25px;
     	flex-direction: column;
 		height: 300px;
-        border: 1px solid white;
+        border: 0.5px solid white;
     }
 
     .ligne {
