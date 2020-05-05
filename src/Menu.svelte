@@ -1,3 +1,4 @@
+
 <script>
     import Toggle from './Toggle.svelte';
 
@@ -11,6 +12,4 @@
     </div>
 </Toggle>
 <br/><br/>
-
-
 
