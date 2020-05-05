@@ -16,7 +16,8 @@
 
     <div class="pages">
         <section class="seventh page">
-            <Menu/>
+<!--            <Menu/>-->
+            <Color/>
         </section>
         <section id="home" class="first page">
             <Home/>

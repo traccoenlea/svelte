@@ -15,13 +15,35 @@
         let green = g;
         let blue = b;
 
-        if (red <= 50 || green <= 50 || blue <= 50) {
-            document.getElementById('bgChange').style.color = 'white';
-        }else if(red >= 200 || green >=200 || blue >= 200){
-            document.getElementById('bgChange').style.color = 'black';
-        }else if(90 <=red>= 170 || 90 <=green>= 170 || 90 <=blue>= 170){
-            alert('entre 2');
+        let color = 0;
+
+        let total = 0;
+
+        // if (red <= 50 && green <= 50 && blue <= 50) {
+        //     document.getElementById('bgChange').style.color = 'white';
+        //     color = 1;
+        // }else if(red >= 200 && green >=200 && blue >= 200){
+        //     document.getElementById('bgChange').style.color = 'black';
+        //     color = 1;
+        // }
+
+        if(color === 0){
+            for(let i = 1; i<=3; i++){
+                if(i === 1){
+                    total += red;
+                }else if(i === 2){
+                    total += green;
+                }else if(i=== 3){
+                    total += blue;
+                }
+            }
+            if(total < 200){
+                document.getElementById('bgChange').style.color = 'white';
+            }else{
+                document.getElementById('bgChange').style.color = 'black';
+            }
         }
+
 
     }
 </script>
