@@ -37,7 +37,7 @@
 
 
 	.fond {
-	    background: url('/img/hero.jpg') no-repeat center fixed; 
+	    background: url('/img/debouche.png') no-repeat center fixed; 
 	    background-size: cover;
 	    height: 100vh;
 	    display: flex;
@@ -46,17 +46,16 @@
         
     }
     
-
-
     .texte {
 
-    	background-color: rgba(255, 255, 255, 0.363);
+    	/*background-color: rgba(255, 255, 255, 0.363);*/
     	width: 280px;
     	padding: 40px;
     	display: flex;
 		margin: 25px;
     	flex-direction: column;
 		height: 300px;
+        border: 1px solid white;
     }
 
     .ligne {
@@ -71,15 +70,13 @@
     	font-family: 'Raleway-SemiBold', sans-serif;
     	font-size: 20px;
     	padding-bottom: 20px;
-    }
-    h1 {
         color : white;
-        font-family: 'Raleway-Bold', sans-serif;
-        font-size: 40px;
     }
+
     p {
-    	font-family: 'Raleway-Regular', sans-serif;
+    	font-family: 'Raleway-Light', sans-serif;
     	font-size: 15px;
     	padding: 10px;
+        color : white;
     }
      </style>
