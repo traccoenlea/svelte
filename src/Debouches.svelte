@@ -1,6 +1,5 @@
-<div class="fond">
-
-	<div class="texte"> 
+<div class="fond"> 
+	<div class="texte">  
 
 		<div class="ligne"></div>
 		<h2> COMMUNICATION ET RÉDACTION </h2> 
@@ -73,7 +72,11 @@
     	font-size: 20px;
     	padding-bottom: 20px;
     }
-
+    h1 {
+        color : white;
+        font-family: 'Raleway-Bold', sans-serif;
+        font-size: 40px;
+    }
     p {
     	font-family: 'Raleway-Regular', sans-serif;
     	font-size: 15px;
