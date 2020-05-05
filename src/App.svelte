@@ -18,23 +18,17 @@
         <section class="seventh page">
             <Menu/>
         </section>
-        <section class="first page">
+        <section id="home" class="first page">
             <Home/>
         </section>
-        <section class="second page">
+        <section id="objectifs" class="second page">
             <Objectifs/>
         </section>
-        <section class="third page">
+        <section id="debouches" class="third page">
             <Debouches/>
         </section>
-        <section class="fourth page">
+        <section id="programme" class="fourth page">
             <Programme/>
-        </section>
-        <section class="fifth page">
-            <Perso/>
-        </section>
-        <section class="sixth page">
-<!--            <Menu/>-->
         </section>
     </div>
     <ul class="pagination">
