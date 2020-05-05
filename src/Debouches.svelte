@@ -40,11 +40,10 @@
 	    height :100vh;
 	    background: url('/img/hero.jpg') no-repeat center fixed; 
 	    background-size: cover;
-	    height: 100vh;
 	    display: inline-flex;
-    	justify-content: left;
-    	padding-left: 150px;
-    	align-items: center;
+    	padding-left: 22vh;
+        align-items: center;
+        
     }
     
 
@@ -52,17 +51,20 @@
     .texte {
 
     	background-color: rgba(255, 255, 255, 0.363);
-    	width: 50vh;
+    	width: 280px;
     	padding: 40px;
     	display: flex;
+		margin: 25px;
     	flex-direction: column;
+		height: 300px;
     }
 
     .ligne {
 	    
 	    border-top: 5px solid #EE8B29;
 	    height: 30px;
-	    width: 70px;
+        width: 70px;
+
 	}
 
 	h2 {
