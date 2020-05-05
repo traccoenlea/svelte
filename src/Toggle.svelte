@@ -2,8 +2,9 @@
 <!--    <use xlink:href="#icon-eyedropper"></use>-->
 <!--</svg>-->
 
-<button on:click|preventDefault|stopPropagation={toggleActive}>Click here mate !</button>
+<!--<button on:click|preventDefault|stopPropagation={toggleActive}>Click here mate !</button>-->
 
+<div class="color" on:click|preventDefault|stopPropagation={toggleActive}>Modifier</div>
 
 <!--<nav>-->
 <!--	1-->
@@ -28,6 +29,11 @@
 
 
 <style>
+    .color {
+        background: yellow;
+        text-align: right;
+    }
+
     .icon {
         display: inline-block;
         width: 1.5em;
