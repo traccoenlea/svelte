@@ -36,13 +36,14 @@
 
 <style> 
 
-    .fond {
-	    height :100vh;
+
+	.fond {
 	    background: url('/img/hero.jpg') no-repeat center fixed; 
 	    background-size: cover;
-	    display: inline-flex;
-    	padding-left: 22vh;
-        align-items: center;
+	    height: 100vh;
+	    display: flex;
+        justify-content: center;
+    	align-items: center;
         
     }
     
