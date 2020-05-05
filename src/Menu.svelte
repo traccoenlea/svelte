@@ -31,18 +31,22 @@
 
 
 <style>
-    
-    .content {
+    .liTo {
+        background: purple;
     }
 
-   
+    .content {
+       width: 100%;
+
+    }
+
     .nav{
         padding: 20px;
         background-color: white;
         display: flex;
         width: 100%;
         position: fixed;
-        box-shadow: 0px 0px 11px -5px #000;
+        box-shadow: 0 0 11px -5px #000;
     }
 
     .menu {
@@ -51,15 +55,17 @@
         justify-content: flex-start;
         margin-left: 50px;
         align-items: center;
+        position: absolute;
     }
 
     .toggle {
-        top: 0;
-        position: fixed;        
-        width : 30%;
+        top: 10px;
+        right: 20px;
+        /*margin: auto;*/
+        position: relative;
+        width : 100%;
         display: flex;
         justify-content: flex-end;
-        margin-right: 100px;
         align-items: center;
     }
 
