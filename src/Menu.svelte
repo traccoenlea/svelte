@@ -1,4 +1,3 @@
-
 <script>
     import Toggle from './Toggle.svelte';
 
@@ -11,5 +10,5 @@
         <img {src} alt="test" id="imageTest"/>
     </div>
 </Toggle>
-<br/><br/>
+
 
