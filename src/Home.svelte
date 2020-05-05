@@ -1,4 +1,6 @@
 <script>
+	import Menu from './Menu.svelte';
+
 
 	let src = '/img/fond.png';
 	let langue = '/img/icon/langue.png';
@@ -9,7 +11,7 @@
 	let doc = '/img/icon/doc.png';
 
 </script>
-
+<Menu/>
 
 <div class="fond">
 

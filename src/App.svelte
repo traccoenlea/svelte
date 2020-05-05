@@ -4,22 +4,18 @@
     import Debouches from './Debouches.svelte';
     import Programme from './Programme.svelte';
     import Perso from './Perso.svelte';
-    import Menu from './Menu.svelte';
 
     import Juju from './Juju.svelte';
     import Lea from './Lea.svelte';
     import Lea_Bis from './Lea_Bis.svelte';
     import Color from './Color.svelte';
-    import TestMenu from './TestMenu.svelte';
-
-
+    import Menu from './Menu.svelte';
 </script>
 
     <div class="pages">
         <section class="seventh page">
 <!--            <Menu/>-->
-<!--            <Color/>-->
-            <TestMenu/>
+            <Color/>
         </section>
         <section id="home" class="first page">
             <Home/>

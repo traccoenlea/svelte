@@ -1,3 +1,7 @@
+<script>
+    import Menu from './Menu.svelte';
+</script>
+<Menu/>
 <div class="wrap">
 
     <div class="boutons">

@@ -1,4 +1,9 @@
-<div class="fond"> 
+<script>
+	import Menu from './Menu.svelte';
+</script>
+<Menu/>
+
+<div class="fond">
 	<div class="texte">  
 
 		<div class="ligne"></div>
