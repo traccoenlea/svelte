@@ -229,7 +229,7 @@
     }
     .sideForm {
         height: 100%;
-        width: 500px; /* NE PAS CHANGER LA WIDTH !!  SE CHANGE EN JS*/
+        width: 0; /* NE PAS CHANGER LA WIDTH !!  SE CHANGE EN JS*/
         position: fixed;
         z-index: 1;
         top: 0;
