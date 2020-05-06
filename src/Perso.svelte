@@ -1,11 +1,13 @@
 <script>
     import TestMenu from './TestMenu.svelte';
 
+    let education = '/img/icon/education.svg';
+
     let src = '/img/fond.png';
     let langue = '/img/icon/langue.png';
     let location = '/img/icon/location.png';
     let cours = '/img/icon/cours.png';
-    let education = '/img/icon/education.png';
+    // let education = '/img/icon/education.png';
     let diplomas = '/img/icon/diplomas.png';
     let doc = '/img/icon/doc.png';
 
@@ -81,6 +83,9 @@
                 <p> {heures} heures d'enseignements </p>
             </div>
         </div>
+
+
+        <img src={education} class="imgToChange"/>
     </div>
 </div>
 
@@ -141,8 +146,6 @@
 
         <div class="colorsToChange">
 
-
-
             <label for="bgColor">Changement couleur background :</label>
             <input id="bgColor" type="color" bind:value={color} style="height: 50px;">
 
@@ -177,16 +180,18 @@
 
 <style>
 
+    .imgToChange {
+        color: yellow;
+    }
+
     /*raleway to remove*/
     h2 {
-        /*font-family: 'Raleway-SemiBold', sans-serif;*/
         font-weight: 600;
         font-size: 20px;
         padding-bottom: 20px;
     }
 
     p {
-        /*font-family: 'Raleway-Light', sans-serif;*/
         font-weight: 300;
         font-size: 15px;
         padding: 10px;
@@ -196,7 +201,6 @@
         background-color: #FF7F00;
         text-align: right;
         padding: 15px 20px;
-        /*font-family: 'Raleway-Light', sans-serif;*/
         font-weight: 300;
         color: white;
         font-size: 15px;
