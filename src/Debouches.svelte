@@ -1,11 +1,10 @@
 <script>
-    import TestMenu from './TestMenu.svelte';
+    import Menu from './Menu.svelte';
 </script>
-<TestMenu/>
+<Menu/>
 
 <div class="fond">
     <div class="texte">
-
         <div class="ligne"></div>
         <h2> COMMUNICATION ET RÉDACTION </h2>
         <p> - Web Designer </p>
@@ -15,7 +14,6 @@
     </div>
 
     <div class="texte">
-
         <div class="ligne"></div>
         <h2> DÉVELOPPEMENT DES INTERFACES </h2>
         <p> - Integrador Web </p>
@@ -24,18 +22,15 @@
     </div>
 
     <div class="texte">
-
         <div class="ligne"></div>
         <h2> CONCEPTION ET DESIGN DES INTERFACES WEB </h2>
-        <p> - Développeur Web  </p>
+        <p> - Développeur Web </p>
         <p> - Front End </p>
         <p> - Webmaster </p>
         <p> - Référenceur Web </p>
         <p> - Modérateur Web </p>
-
     </div>
 </div>
-
 
 
 <style>
@@ -49,7 +44,6 @@
     }
 
     .texte {
-        /*background-color: rgba(255, 255, 255, 0.363);*/
         width: 280px;
         padding: 40px;
         display: flex;
@@ -58,22 +52,24 @@
         height: 300px;
         border: 0.5px solid white;
     }
-    .ligne {
 
+    .ligne {
         border-top: 5px solid #EE8B29;
         height: 30px;
         width: 70px;
     }
+
     h2 {
         font-family: 'Raleway-SemiBold', sans-serif;
         font-size: 20px;
         padding-bottom: 20px;
-        color : white;
+        color: white;
     }
+
     p {
         font-family: 'Raleway-Light', sans-serif;
         font-size: 15px;
         padding: 10px;
-        color : white;
+        color: white;
     }
 </style>

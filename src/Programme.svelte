@@ -1,49 +1,34 @@
 <script>
-    import TestMenu from './TestMenu.svelte';
+    import Menu from './Menu.svelte';
 </script>
-<TestMenu/>
+<Menu/>
 
 <div class="wrap">
-
     <div class="boutons">
         <h1> POUR VOIR LE PROGRAMME </h1>
         <a class="btn" href="/img/pdf/programme.pdf"
-   download="Programme LP CREAWEB">Télécharger l'image</a>
+           download="Programme LP CREAWEB">Télécharger le programme</a>
     </div>
-
-
-
 </div>
 
 <style>
-
-    .fond {
-        height: 100vh;
-        margin: 0px;
-        padding: 0px;
-    }
-
     .wrap {
-
         height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        display: flex;
         flex-direction: column;
         background: url(/img/programme.jpg) no-repeat center fixed;
         background-size: cover;
     }
 
     .boutons {
-
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 50px;
         align-items: center;
         z-index: 99;
-
     }
 
     .btn {
@@ -58,7 +43,6 @@
         background-color: transparent;
         color: white;
         margin: 50px;
-
     }
 
     .btn:hover {
@@ -79,5 +63,4 @@
         justify-content: center;
         text-decoration: none;
     }
-
 </style>

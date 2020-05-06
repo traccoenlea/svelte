@@ -1,10 +1,9 @@
 <script>
-    import TestMenu from './TestMenu.svelte';
+    import Menu from './Menu.svelte';
 </script>
-<TestMenu/>
+<Menu/>
 
 <div class="fond">
-
     <div class="groupe">
         <div class="groupe1">
             <h1> OBJECTIFS & COMPÉTENCES </h1>
@@ -16,7 +15,6 @@
         </div>
 
         <div class="groupe2">
-
             <p class="titre"> Elle leur permet également :</p>
             <p class="inter"> • De maîtriser les connaissances et les compétences indispensables à la conception d’un
                 projet dans le domaine du web.</p>
@@ -25,7 +23,6 @@
             <p class="inter"> • D’acquérir une méthodologie rigoureuse de la gestion d’un projet.</p>
             <p class="inter"> • D’acquérir des compétences en communication orale et écrite à des fins argumentatives
                 (présentation de projets, prise de décision, expression de choix etc.)</p>
-
         </div>
     </div>
 </div>
@@ -91,12 +88,10 @@
     }
 
     .inter {
-
         padding-left: 40px;
     }
 
     .titre {
-
         padding-bottom: 20px;
     }
 
