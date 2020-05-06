@@ -340,7 +340,7 @@
     .sideForm .closebtn {
         position: absolute;
         top: 0;
-        right: 25px;
+        right: 50px;
         font-size: 40px;
         margin-left: 50px;
     }
