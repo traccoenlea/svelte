@@ -1,17 +1,3 @@
-<!--<nav class="nav">-->
-<!--    <div class="menu">-->
-<!--        <ul>-->
-<!--            <li><a href="#home">Accueil</a></li>-->
-<!--            <li><a href="#objectifs">Objectifs & Compétences</a></li>-->
-<!--            <li><a href="#debouches">Débouchés</a></li>-->
-<!--            <li><a href="#programme">Programme</a></li>-->
-<!--        </ul>-->
-<!--    </div>-->
-<!--    <div class="toggle">-->
-<!--        <div on:click={openNav} class="color">Modifier la page</div>-->
-<!--    </div>-->
-<!--</nav>-->
-
 <nav class="nav">
     <div class="menu">
         <ul>

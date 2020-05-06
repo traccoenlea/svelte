@@ -2,6 +2,7 @@
     import Menu from './Menu.svelte';
 </script>
 <Menu/>
+
 <div class="fond">
 
     <div class="groupe">
