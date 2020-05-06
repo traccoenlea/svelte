@@ -2,11 +2,7 @@
     import Icon from 'svelte-awesome';
     import { beer, flag, comment, codeFork, camera, ban } from 'svelte-awesome/icons';
     import { faThumbsUp } from '@fortawesome/free-regular-svg-icons';
-
-
     import TestMenu from './TestMenu.svelte';
-
-
     let src = '/img/fond.png';
     let langue = '/img/icon/langue.png';
     let location = '/img/icon/location.png';
@@ -14,19 +10,13 @@
     let education = '/img/icon/education.png';
     let diplomas = '/img/icon/diplomas.png';
     let doc = '/img/icon/doc.png';
-
-
-
     //FORM MODIF
-
     function openNav() {
         document.getElementById("sideForm").style.width = "500px";
     }
-
     function closeNav() {
         document.getElementById("sideForm").style.width = "0";
     }
-
     //MODIF FORMULAIRE
     let nomFormation = 'LP CRÉAWEB: MÉTIERS DU NUMÉRIQUE: CONCEPTION, RÉDACTION ET RÉALISATION WEB';
     let lieuFormation = 'IUT DE LENS';
@@ -35,21 +25,17 @@
     let admissible = 'Bac +2 minimum';
     let sortie = 'Bac +3';
     let heures = '536';
-
     //FONT & COLOR
     let color = 'white';
     let textColor = 'black';
     let fillColor = 'black';
     // let divColor = '#FF7F00';
     let divColor = 'aqua';
-
     let fonts = ['Times New Roman', 'Georgia', 'Arial', 'Verdana', 'Monospace', 'Courier New', 'Lucida Console'];
     var font = 'Raleway';
-
     function changeFont() {
         font = document.getElementById('fontChange').value;
     }
-
 </script>
 
 <TestMenu/>
@@ -57,47 +43,47 @@
 
 <div class="fond">
     <div class="textChange" id="fontHere" style="--font-family: {font}">
-    <div class="texte" id="bgChange" style="--bg-color: {color}">
-        <div class="allText" id="txtChange" style="--text-color: {textColor}">
-            <div class="ligne" id="ligne" style="--div-color: {divColor}"></div>
-            <h2 id="nomFormation">{nomFormation}</h2>
+        <div class="texte" id="bgChange" style="--bg-color: {color}">
+            <div class="allText" id="txtChange" style="--text-color: {textColor}">
+                <div class="ligne" id="ligne" style="--div-color: {divColor}"></div>
+                <h2 id="nomFormation">{nomFormation}</h2>
 
-            <div class="langue">
-                <img src={location} alt="icone de lieu de formation">
-                <p>{lieuFormation}</p>
+                <div class="langue">
+                    <img src={location} alt="icone de lieu de formation">
+                    <p>{lieuFormation}</p>
+                </div>
+
+                <div class="langue">
+                    <img src={langue} alt="icone de la langue utilisée">
+                    <p>{langueCours}</p>
+                </div>
+
+                <div class="langue">
+                    <img src={education} alt="icone des modalités">
+                    <p>{modalites}</p>
+                </div>
+
+                <div class="langue">
+                    <img src={doc} alt="icone de niveau de formation nécessaire">
+                    <p> Admissible à : {admissible} </p>
+                </div>
+
+                <div class="langue">
+                    <img src={diplomas} alt="icone de niveau obtenu">
+                    <p> Niveau de sortie : {sortie} </p>
+                </div>
+
+                <div class="heures">
+                    <p> {heures} heures d'enseignements </p>
+                </div>
             </div>
 
-            <div class="langue">
-                <img src={langue} alt="icone de la langue utilisée">
-                <p>{langueCours}</p>
-            </div>
+            <Icon data={flag} id="iconChange"  style="fill : {fillColor}" scale="2"/>
 
-            <div class="langue">
-                <img src={education} alt="icone des modalités">
-                <p>{modalites}</p>
-            </div>
 
-            <div class="langue">
-                <img src={doc} alt="icone de niveau de formation nécessaire">
-                <p> Admissible à : {admissible} </p>
-            </div>
 
-            <div class="langue">
-                <img src={diplomas} alt="icone de niveau obtenu">
-                <p> Niveau de sortie : {sortie} </p>
-            </div>
-
-            <div class="heures">
-                <p> {heures} heures d'enseignements </p>
-            </div>
         </div>
-
-        <Icon data={flag} id="iconChange"  style="fill : {fillColor}" scale="2"/>
-
-
-
     </div>
-</div>
 
     <div class="toggle">
         <div on:click={openNav} class="color">Modifier la page</div>
@@ -199,29 +185,24 @@
 
 
 <style>
-
     #iconChange {
         fill: var(--fill-color);
         background: red;
     }
-
     #ligne {
         border-top : 5px solid var(--div-color);
     }
-
     /*raleway to remove*/
     h2 {
         font-weight: 600;
         font-size: 20px;
         padding-bottom: 20px;
     }
-
     p {
         font-weight: 300;
         font-size: 15px;
         padding: 10px;
     }
-
     .color {
         background-color: #FF7F00;
         text-align: right;
@@ -231,28 +212,21 @@
         font-size: 15px;
         border-radius: 2px;
     }
-
     /*font & color*/
-
     #bgChange {
         background: var(--bg-color);
         padding: 30px;
     }
-
     #txtChange {
         font-weight: bold;
         margin: 20px;
         font-size: 20px;
         color: var(--text-color);
     }
-
     #fontHere {
         font-family: var(--font-family);
         font-size: 30px;
     }
-
-
-
     .sideForm {
         height: 100%;
         width: 500px; /* NE PAS CHANGER LA WIDTH !!  SE CHANGE EN JS*/
@@ -265,10 +239,7 @@
         transition: 0.5s;
         padding: 20px;
         padding-top: 60px;
-
     }
-
-
     .sideForm a {
         padding: 20px;
         text-decoration: none;
@@ -277,11 +248,9 @@
         display: block;
         transition: 0.3s;
     }
-
     .sideForm a:hover {
         color: red;
     }
-
     .sideForm .closebtn {
         position: absolute;
         top: 0;
@@ -289,7 +258,6 @@
         font-size: 36px;
         margin-left: 50px;
     }
-
     .fond {
         height: 100vh;
         background: url('/img/fond.png') no-repeat center fixed;
@@ -300,45 +268,30 @@
         padding-left: 150px;
         align-items: center;
     }
-
     .langue {
-
         display: flex;
         justify-content: left;
         align-items: center;
-
     }
-
     .ligne_bas {
-
         border-bottom: 5px solid #EE8B29;
         height: 30px;
         width: 70px;
     }
-
-
     img {
-
         width: 15px;
         height: 15px;
     }
-
     .texte {
-
         background-color: white;
         width: 50vh;
         padding: 40px;
         display: flex;
         flex-direction: column;
     }
-
     .ligne {
         /*border-top: 5px solid #EE8B29;*/
         height: 30px;
         width: 70px;
     }
-
-
-
 </style>
-

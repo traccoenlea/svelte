@@ -10,7 +10,8 @@
     $: g = (rgb & 0x00ff00) >> 8;
     $: b = (rgb & 0x0000ff) >> 0;
 
-    function changeColor() {
+    function automaticChange(){
+        alert('on rentre ici');
         let red = r;
         let green = g;
         let blue = b;
@@ -56,7 +57,7 @@
 <h2>{color}</h2>
 r:{r} g:{g} b:{b}
 
-<button on:click={changeColor}>Choisir cette couleur pour mon background</button>
+<button on:click={automaticChange}>Choisir cette couleur pour mon background</button>
 
 <br/><br/><br/>
 
