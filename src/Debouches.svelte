@@ -38,8 +38,7 @@
 
 
 
-<style> 
-
+<style>
 
 	.fond {
 	    background: url('/img/debouche.png') no-repeat center fixed; 
