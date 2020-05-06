@@ -1,7 +1,7 @@
 <script>
-    import Menu from './Menu.svelte';
+    import TestMenu from './TestMenu.svelte';
 </script>
-<Menu/>
+<TestMenu/>
 
 <div class="fond">
     <div class="texte">

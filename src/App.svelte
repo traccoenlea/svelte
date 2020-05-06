@@ -17,8 +17,9 @@
 <!--        <Color/>-->
 <!--    </section>-->
 <!--    <Menu/>-->
+
     <section id="home" class="first page">
-        <Home/>
+        <Perso/>
     </section>
     <section id="objectifs" class="second page">
         <Objectifs/>
