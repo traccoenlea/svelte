@@ -7,39 +7,38 @@
 	<div class="texte">  
 
 		<div class="ligne"></div>
-		<h2> COMMUNICATION ET RÉDACTION </h2> 
-            <p> - Web Designer </p> 
-            <p> - Infographiste </p> 
-            <p> - Concepteur Graphique </p> 
-            <p> - Animateur 2D </p> 
+    		<h2> COMMUNICATION ET RÉDACTION </h2> 
+                <p> - Web Designer </p> 
+                <p> - Infographiste </p> 
+                <p> - Concepteur Graphique </p> 
+                <p> - Animateur 2D </p> 
 		</div>
 
-        	<div class="texte"> 
+        <div class="texte"> 
 
-		<div class="ligne"></div>
-		<h2> DÉVELOPPEMENT DES INTERFACES </h2> 
-			<p> - Integrador Web </p> 
-            <p> - Graphiste </p> 
-            <p> - Multimedia </p> 
-		</div>
+    		<div class="ligne"></div>
+    		<h2> DÉVELOPPEMENT DES INTERFACES </h2> 
+    			<p> - Integrador Web </p> 
+                <p> - Graphiste </p> 
+                <p> - Multimedia </p> 
+    		</div>
 
-        	<div class="texte"> 
+            	<div class="texte"> 
 
-		<div class="ligne"></div>
-		<h2> CONCEPTION ET DESIGN DES INTERFACES WEB </h2> 
-			<p> - Développeur Web  </p> 
-            <p> - Front End </p> 
-            <p> - Webmaster </p> 
-            <p> - Référenceur Web </p> 
-            <p> - Modérateur Web </p> 
+    		<div class="ligne"></div>
+    		<h2> CONCEPTION ET DESIGN DES INTERFACES WEB </h2> 
+    			<p> - Développeur Web  </p> 
+                <p> - Front End </p> 
+                <p> - Webmaster </p> 
+                <p> - Référenceur Web </p> 
+                <p> - Modérateur Web </p> 
 
-		</div>
+    		</div>
     </div>
 
 
 
 <style> 
-
 
 	.fond {
 	    background: url('/img/debouche.png') no-repeat center fixed; 

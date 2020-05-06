@@ -1,18 +1,13 @@
-<!--<nav class="nav">-->
-<!--    <div class="menu">-->
-<!--        <ul>-->
-<!--            <li><a href="#home">Accueil</a></li>-->
-<!--            <li><a href="#objectifs">Objectifs & Compétences</a></li>-->
-<!--            <li><a href="#debouches">Débouchés</a></li>-->
-<!--            <li><a href="#programme">Programme</a></li>-->
-<!--        </ul>-->
-<!--    </div>-->
-<!--    <div class="toggle">-->
-<!--        <div on:click={openNav} class="color">Modifier la page</div>-->
-<!--    </div>-->
-<!--</nav>-->
+<script>
+    import Toggle from './Toggle.svelte';
+
+    let src = 'https://media.giphy.com/media/jOgRWnCyyRqLaCjHMS/source.gif';
+
+</script>
+
 
 <nav class="nav">
+
     <div class="menu">
         <ul>
             <li><a href="#home">Accueil</a></li>
@@ -21,36 +16,34 @@
             <li><a href="#programme">Programme</a></li>
         </ul>
     </div>
-
-    <div class="toggle">
-        <div on:click={openNav} class="color">Modifier la page</div>
-    </div>
 </nav>
 
+    <div class="toggle">
+        <li class="liTo">
+            <Toggle title="Toggle Header" isActive={true}>
+                <div class="content">
+                    <img {src} alt="test" id="imageTest"/>
+                </div>
+            </Toggle>
+        </li>
+    </div>
 
-<div id="sideForm" class="sideForm">
-    <a href="javascript:void(0)" class="closebtn" on:click={closeNav}>&times;</a>
-    <h1>EN GROS LE FORMULAIRE VA LA</h1>
-</div>
 
-<script>
-    function openNav() {
-        document.getElementById("sideForm").style.width = "500px";
-    }
-
-    function closeNav() {
-        document.getElementById("sideForm").style.width = "0";
-    }
-</script>
 
 <style>
+    .liTo {
+         background-color: #FF7F00;
+    }
 
+    .content {
+       width: 100%;
 
-    .nav {
+    }
+
+    .nav{
         padding: 20px;
         background-color: white;
         display: flex;
-        justify-content: space-between;
         width: 100%;
         position: fixed;
         box-shadow: 0 0 11px -5px #000;
@@ -59,21 +52,25 @@
     }
 
     .menu {
+        width : 70%;
         display: flex;
         justify-content: flex-start;
         margin-left: 50px;
         align-items: center;
+        position: absolute;
+
     }
 
     .toggle {
-        top: 15px;
+        top: 30px;
         right: 100px;
         position: relative;
-        /*width: 100%;*/
+        width : 100%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
+
 
     a {
         text-decoration: none;
@@ -100,53 +97,6 @@
 
     }
 
-    .color {
-        background-color: #FF7F00;
-        text-align: right;
-        padding: 15px 20px;
-        font-family: 'Raleway-Light', sans-serif;
-        color: white;
-        font-size: 15px;
-        border-radius: 2px;
-    }
-
-    .sideForm {
-        height: 100%;
-        width: 0; /* NE PAS CHANGER LA WIDTH !!  SE CHANGE EN JS*/
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        right: 0;
-        background-color: #FF7F00;
-        overflow-x: hidden;
-        padding-top: 60px;
-        transition: 0.5s;
-    }
-
-    /*à remplacer par les inputs pour le padding*/
-    .sideForm h1 {
-        padding: 20px;
-    }
-
-    .sideForm a {
-        padding: 20px;
-        text-decoration: none;
-        font-size: 50px;
-        color: purple;
-        display: block;
-        transition: 0.3s;
-    }
-
-    .sideForm a:hover {
-        color: red;
-    }
-
-    .sideForm .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-
 </style>
+
+
