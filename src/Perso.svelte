@@ -331,12 +331,16 @@
     }
 
     .sideForm {
+        width: 0; /* NE PAS CHANGER LA WIDTH !!  SE CHANGE EN JS*/
         height: 100vh;
+<<<<<<< HEAD
         width: -10px; /* NE PAS CHANGER LA WIDTH !!  SE CHANGE EN JS*/
+=======
+>>>>>>> 8cfb524aee7382152acf91d5abbb3f4a7a53df67
         position: fixed;
         z-index: 1;
         top: 0;
-        right: 0;
+        right: -40px;
         background-color: rgba(1, 1, 1, 0.80);
         overflow-x: hidden;
         transition: 0.5s;
