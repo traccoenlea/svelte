@@ -12,7 +12,7 @@
     let doc = '/img/icon/doc.png';
     //FORM MODIF
     function openNav() {
-        document.getElementById("sideForm").style.width = "500px";
+        document.getElementById("sideForm").style.width = "30%";
     }
     function closeNav() {
         document.getElementById("sideForm").style.width = "0";
@@ -332,7 +332,7 @@
 
     .sideForm {
         height: 100vh;
-        width: 30%; /* NE PAS CHANGER LA WIDTH !!  SE CHANGE EN JS*/
+        width: -10px; /* NE PAS CHANGER LA WIDTH !!  SE CHANGE EN JS*/
         position: fixed;
         z-index: 1;
         top: 0;
@@ -401,6 +401,7 @@
         padding: 40px;
         display: flex;
         flex-direction: column;
+        margin-top: 60px;
     }
     .ligne {
         height: 30px;

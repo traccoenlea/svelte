@@ -10,7 +10,7 @@
 
 <style>
     nav {
-        height: 40px;
+        height: 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
