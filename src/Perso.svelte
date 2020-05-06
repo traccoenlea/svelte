@@ -12,7 +12,7 @@
     let doc = '/img/icon/doc.png';
     //FORM MODIF
     function openNav() {
-        document.getElementById("sideForm").style.width = "500px";
+        document.getElementById("sideForm").style.width = "30%";
     }
     function closeNav() {
         document.getElementById("sideForm").style.width = "0";
