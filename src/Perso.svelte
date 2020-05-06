@@ -1,15 +1,20 @@
 <script>
+    import Icon from 'svelte-awesome';
+    import { beer, flag, comment, codeFork, camera, ban } from 'svelte-awesome/icons';
+    import { faThumbsUp } from '@fortawesome/free-regular-svg-icons';
+
+
     import TestMenu from './TestMenu.svelte';
 
-    let education = '/img/icon/education.svg';
 
     let src = '/img/fond.png';
     let langue = '/img/icon/langue.png';
     let location = '/img/icon/location.png';
     let cours = '/img/icon/cours.png';
-    // let education = '/img/icon/education.png';
+    let education = '/img/icon/education.png';
     let diplomas = '/img/icon/diplomas.png';
     let doc = '/img/icon/doc.png';
+
 
 
     //FORM MODIF
@@ -34,6 +39,9 @@
     //FONT & COLOR
     let color = 'white';
     let textColor = 'black';
+    let fillColor = 'black';
+    // let divColor = '#FF7F00';
+    let divColor = 'aqua';
 
     let fonts = ['Times New Roman', 'Georgia', 'Arial', 'Verdana', 'Monospace', 'Courier New', 'Lucida Console'];
     var font = 'Raleway';
@@ -48,10 +56,10 @@
 
 
 <div class="fond">
-<div class="textChange" id="fontHere" style="--font-family: {font}">
+    <div class="textChange" id="fontHere" style="--font-family: {font}">
     <div class="texte" id="bgChange" style="--bg-color: {color}">
         <div class="allText" id="txtChange" style="--text-color: {textColor}">
-            <div class="ligne"></div>
+            <div class="ligne" id="ligne" style="--div-color: {divColor}"></div>
             <h2 id="nomFormation">{nomFormation}</h2>
 
             <div class="langue">
@@ -84,8 +92,10 @@
             </div>
         </div>
 
+        <Icon data={flag} id="iconChange"  style="fill : {fillColor}" scale="2"/>
 
-        <img src={education} class="imgToChange"/>
+
+
     </div>
 </div>
 
@@ -157,6 +167,16 @@
 
             <br/><br/>
 
+            <label for="fillColor">Changement couleur des icones :</label>
+            <input id="fillColor" type="color" bind:value={fillColor} style="height: 50px;">
+
+            <br/><br/>
+
+            <label for="divColor">Changement couleur du trait :</label>
+            <input id="divColor" type="color" bind:value={divColor} style="height: 50px;">
+
+            <br/><br/>
+
 
             <label for="fontChange">Changement de font :</label>
 
@@ -180,8 +200,13 @@
 
 <style>
 
-    .imgToChange {
-        color: yellow;
+    #iconChange {
+        fill: var(--fill-color);
+        background: red;
+    }
+
+    #ligne {
+        border-top : 5px solid var(--div-color);
     }
 
     /*raleway to remove*/
@@ -224,18 +249,6 @@
     #fontHere {
         font-family: var(--font-family);
         font-size: 30px;
-    }
-
-    hr {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 70px;
-        height: 5px;
-        color: purple;
-        background: purple;
-        outline: none;
-        border: none;
-
     }
 
 
@@ -320,8 +333,7 @@
     }
 
     .ligne {
-
-        border-top: 5px solid #EE8B29;
+        /*border-top: 5px solid #EE8B29;*/
         height: 30px;
         width: 70px;
     }
