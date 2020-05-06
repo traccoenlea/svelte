@@ -7,11 +7,11 @@
 
     <div class="boutons">
         <h1> POUR VOIR LE PROGRAMME </h1>
-        <button class="btn">Télécharger le fichier</button>
+        <a class="btn" href="/img/pdf/programme.pdf"
+   download="Programme LP CREAWEB">Télécharger l'image</a>
     </div>
 
 
-    <div id="gradient-overlay"></div>
 
 </div>
 
@@ -46,14 +46,6 @@
 
     }
 
-    #gradient-overlay {
-        background: #000000;
-        height: 100vh;
-        width: 100%;
-        position: absolute;
-        opacity: 0.3;
-    }
-
     .btn {
         width: 250px;
         height: 45px;
@@ -81,5 +73,11 @@
         font-size: 40px;
     }
 
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
 
 </style>
