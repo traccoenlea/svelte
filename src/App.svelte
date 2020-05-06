@@ -12,6 +12,7 @@
     import Menu from './Menu.svelte';
 </script>
 
+
 <div class="pages">
 <!--    <section class="seventh page">-->
 <!--        <Color/>-->
