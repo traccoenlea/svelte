@@ -16,6 +16,7 @@
 <!--    <section class="seventh page">-->
 <!--        <Color/>-->
 <!--    </section>-->
+<!--    <Menu/>-->
     <section id="home" class="first page">
         <Home/>
     </section>

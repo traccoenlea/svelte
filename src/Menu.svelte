@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script>
     import Toggle from './Toggle.svelte';
 
@@ -6,6 +7,8 @@
 </script>
 
 
+=======
+>>>>>>> 52d888fe8d8f6e01553ac257df33487dc1c2ba4a
 <nav class="nav">
 
     <div class="menu">
