@@ -127,7 +127,7 @@
             </div>
 
             <div class="heures">
-                <input class="nom" type="text" id="changeHeures" bind:value={heures}/>
+                <input class="nom" type="number" id="changeHeures" bind:value={heures}/>
             </div>
         </div>
 
