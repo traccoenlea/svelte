@@ -1,5 +1,4 @@
 POURQUOI SVELTE ?
-
 - nouveauté donc intéressant
 - code compilé
 - virtual dom
@@ -8,7 +7,6 @@ POURQUOI SVELTE ?
 
 
 PRÉSENTATION DU SITE
-
 POURQUOI ?
 - L’objectif c’était de pouvoir créer un site facile d'utilisation, type wordpress like pour présenter des formations
  universitaires et pouvoir le modifier à sa guise.<br/>
@@ -70,8 +68,7 @@ BILAN <br/>
 - nous sommes fières car nous avons réussi à produire un site complet (design et fonctionnel)
 - doc qu’en anglais
 
-
-6. RÉFÉRENCES 
+RÉFÉRENCES 
 
 https://madewithsvelte.com/svelte-awesome
 https://github.com/RobBrazier/svelte-awesome#more-advanced-cases
@@ -79,9 +76,7 @@ https://robbrazier.github.io/svelte-awesome/
 https://github.com/FortAwesome/Font-Awesome
 https://www.npmjs.com/package/@fortawesome/free-regular-svg-icons
 
-
 <br/><br/>
-
 
 // POUR RÉCUPÉRER LE PROJET :
 
